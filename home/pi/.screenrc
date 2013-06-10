@@ -1,0 +1,10 @@
+hardstatus alwayslastline "%{= KW} %-w%{= wk}%50>%n %t%{-}%+w%<"
+defscrollback 10000
+
+register [ "\033:se noai\015a"
+register ] "\033:se ai\015a"
+bind ^] paste [.]
+
+vbell off
+startup_message off
+
