@@ -1,0 +1,15 @@
+This repo provides tools for automating the OLA Raspberry Pi images. For more
+details see http://www.opendmx.net/index.php/Building_a_Custom_Raspbian_Image
+
+Debian Image
+============
+
+$ make deb-install
+$ make release
+
+Git Image
+=========
+
+$ make git-install
+# Clone, configure, build
+$ make release
