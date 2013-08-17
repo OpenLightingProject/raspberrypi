@@ -1,8 +1,8 @@
 #!/bin/bash
-# Prepares an OLA Raspberry Pi image for relase
+# Prepares an OLA Raspberry Pi image for release
 # (C) 2013 Simon Newton
 
-apt-get update && apt-get upgrade
+apt-get update && apt-get -y upgrade
 apt-get autoclean
 apt-get clean
 
