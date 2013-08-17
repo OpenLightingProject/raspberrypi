@@ -13,5 +13,8 @@ SUBSYSTEM=="usb|usb_device", ACTION=="add", ATTRS{idVendor}=="10cf", ATTRS{idPro
 # udev rules for the Eurolite
 SUBSYSTEM=="usb|usb_device", ACTION=="add", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="fa63", GROUP="uucp" MODE="660"
 
+# udev rules file for the karate-device
+KERNEL=="ttyACM?", ATTRS{product}=="DMX2USB simple", SYMLINK+="kldmx0"
+
 # udev rules for SPI
 SUBSYSTEM=="spidev", MODE="0666"
