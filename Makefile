@@ -56,9 +56,9 @@ release: apt-upgrade
 	echo "nameserver 8.8.8.8" > /etc/resolv.conf
 	
 	# Warn about over-clocking
-	if [ $(grep arm_freq /boot/config.txt  | cut -d= -f2) -ne "700" ]; then
-	echo "-------------------------------";
-	echo "Warning - overclocking enabled!";
+	if [ $(grep arm_freq /boot/config.txt | cut -d= -f2) -ne "700" ]; then \
+	  echo "-------------------------------"; \
+	  echo "Warning - overclocking enabled!"; \
 	fi
 
 .PHONY: apt-upgrade deb-install install git-install release
