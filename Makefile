@@ -39,10 +39,9 @@ deb-install: install
 
 # Run this just before the image is copied. This does the final cleanup.
 release: apt-upgrade
-	rm /etc/hostip  # reset the hostip so we regenerate ssh keys on boot
-	rm /root/.bash_history
-	rm /home/pi/.bash_history
-	rm /home/pi/.bash_history
+	rm -f /etc/hostip  # reset the hostip so we regenerate ssh keys on boot
+	rm -f /root/.bash_history
+	rm -f /home/pi/.bash_history
 	
 	rm -Rf /home/pi/.ola  # remove the OLA settings so we start fresh
 	
