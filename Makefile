@@ -26,6 +26,9 @@ git-install: install
 	  $(INSTALL) -c -m 744 $$f $(prefix)/$$dir; \
 	done;
 	
+	usermod -a -G dialout $(user)
+	usermod -a -G plugdev $(user)
+	
 	# install the depdencies
 	apt-get -y install libcppunit-dev libcppunit-1.12-1 uuid-dev pkg-config \
 	libncurses5-dev libtool autoconf automake  g++ libmicrohttpd-dev \
