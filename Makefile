@@ -38,7 +38,7 @@ git-install: install
 
 # Prepare a .deb based image.
 deb-install: install
-	apt-get -i install ola ola-rdm-tests
+	apt-get -i install ola ola-rdm-tests ola-conf-plugins 
 
 # Run this just before the image is copied. This does the final cleanup.
 release: apt-upgrade
