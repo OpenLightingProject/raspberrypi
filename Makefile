@@ -5,7 +5,7 @@ group=pi
 
 # Upgrade our system and remove any extra packages.
 apt-upgrade:
-	apt-get update && apt-get -y upgrade
+	apt-get update && apt-get -y --force-yes upgrade
 	apt-get autoclean
 	apt-get clean
 
@@ -38,7 +38,7 @@ git-install: install
 
 # Prepare a .deb based image.
 deb-install: install
-	apt-get -i install ola ola-rdm-tests ola-conf-plugins 
+	apt-get -i --force-yes install ola ola-rdm-tests ola-conf-plugins 
 
 # Run this just before the image is copied. This does the final cleanup.
 release: apt-upgrade
