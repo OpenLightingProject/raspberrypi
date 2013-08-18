@@ -34,7 +34,7 @@ git-install: install
 	libncurses5-dev libtool autoconf automake  g++ libmicrohttpd-dev \
 	libmicrohttpd10 protobuf-compiler libprotobuf-lite7 python-protobuf \
 	libprotobuf-dev zlib1g-dev bison flex make libftdi-dev libftdi1 \
-	libusb-1.0-0-dev liblo-dev \
+	libusb-1.0-0-dev liblo-dev
 
 # Prepare a .deb based image.
 deb-install: install
