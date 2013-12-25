@@ -34,11 +34,11 @@ git-install: install
 	libncurses5-dev libtool autoconf automake  g++ libmicrohttpd-dev \
 	libmicrohttpd10 protobuf-compiler libprotobuf-lite7 python-protobuf \
 	libprotobuf-dev zlib1g-dev bison flex make libftdi-dev libftdi1 \
-	libusb-1.0-0-dev liblo-dev
+	libusb-1.0-0-dev liblo-dev libavahi-client-dev avahi-daemon libprotoc-dev
 
 # Prepare a .deb based image.
 deb-install: install
-	apt-get -y --force-yes install ola ola-rdm-tests ola-conf-plugins 
+	apt-get -y --force-yes install ola ola-rdm-tests ola-conf-plugins
 
 # Run this just before the image is copied. This does the final cleanup.
 release: apt-upgrade
