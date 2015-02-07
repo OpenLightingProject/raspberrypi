@@ -16,5 +16,8 @@ SUBSYSTEM=="usb|usb_device", ACTION=="add", ATTRS{idVendor}=="04d8", ATTRS{idPro
 # udev rules file for the karate-device
 KERNEL=="ttyACM?", ATTRS{product}=="DMX2USB simple", SYMLINK+="kldmx0"
 
+# udev rules file for the Scanlime Fadecandy device
+SUBSYSTEM=="usb|usb_device", ACTION=="add", ATTRS{idVendor}=="1d50", ATTRS{idProduct}=="607a", GROUP="plugdev"
+
 # udev rules for SPI
 SUBSYSTEM=="spidev", MODE="0666"
