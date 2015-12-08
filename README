@@ -1,6 +1,6 @@
 This repo provides tools for automating the OLA Raspberry Pi image building
 process. For more info see
-http://www.opendmx.net/index.php/Building_a_Custom_Raspbian_Image
+https://wiki.openlighting.org/index.php/Building_a_Custom_Raspbian_Image
 
 As root, run:
 
